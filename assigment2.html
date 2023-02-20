@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<title>Student_Registration_Form</title>
+<style>
+    table,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .table{
+        margin-left: 40px;
+    }
+    .cntnt{
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+    }
+    .options{
+        text-align: justify;
+        margin-left: 50%;
+        margin-top: -4%;
+    }
+    .hobbies{
+        margin-left: -15%;
+    }
+    .btn{
+        margin-left: 40px;
+        padding: 10px;
+    }
+</style>
+</head>
+<body >
+    <div class="cntnt">
+<h2>Student Registration Form</h2>
+<form action="">
+    <label for="name">Name : </label>
+    <input type="text",id="name",name="name">
+    <br><br>
+    <label for="phone">Phone No. : </label>
+    <input type="number",id="phone",name="phone">
+    <br><br>
+    <label for="dob">Date Of Birth : </label>
+    <input type="date",id="dob",name="dob">
+    <br><br>
+    <label for="address">Address : </label>
+    <textarea type="text",name="address"></textarea>
+    <br><br>
+    <label for="gender">Gender : </label>
+    <input type="radio",id="male",name="male",value="Male">
+    <label for="male"> Male</label>
+    <input type="radio",id="female",name="female",value="Female">
+    <label for="female"> Female</label>
+     <br><br>
+     <label for="city">City : </label>
+     <select id="city" , name="city">
+        <option value="selectcity">Select City</option>
+        <option value="Ghaziabad">Gurugram</option>
+        <option value="Gurugram">Ahmdabad</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Noida">Hyderabad</option>
+        <option value="Noida">Mumbai</option>
+     </select>
+       <br><br>
+        <label class="hobbies" for="hobbies">Hobbies : </label>
+        <div class="options">
+            <input type="checkbox" id="music" name="music" value="Music">
+            <label for="music">Music</label><br>
+            <input type="checkbox" id="sports" name="sports" value="Sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="reading" name="reading" value="Reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="travelling" name="travelling" value="travelling">
+            <label for="travelling">Travelling</label><br>
+            <input type="checkbox" id="guitar" name="guitar" value="guitar">
+            <label for="guitar">Guitar</label>
+        </div>
+        <br><br>
+        <div >
+            <input class="btn" type="submit"> 
+            <input class="btn" type="reset">
+        </div>
+        
+</form>
+<h2>Student Records</h2>
+<table class="table">
+<tr>
+    <th>S No.</th>
+    <th>Name</th>
+    <th>Phone No.</th>
+    <th>Gender</th>
+    <th>DOB</th>
+    <th>Hobbies</th>
+</tr>
+<tr>
+    <td rowspan="3">1</td>
+    <td rowspan="3">Akash</td>
+    <td rowspan="3">9793445116</td>
+    <td rowspan="3">Male</td>
+    <td rowspan="3">12/02/1998</td>
+    <td>Music</td>
+</tr>
+<tr>
+    <td>Dance</td>
+</tr>
+<tr>
+    <td>Cooking</td>
+</tr>
+<tr>
+    <td rowspan="3">2</td>
+    <td rowspan="3">Shyam</td>
+    <td rowspan="3">7867905434</td>
+    <td rowspan="3">Male</td>
+    <td rowspan="3">21/09/1999</td>
+    <td>Dance</td>
+    <tr>
+        <td>Travel</td>
+    </tr>
+</tr>
+</table>
+</div>
+</body>
+</html>
